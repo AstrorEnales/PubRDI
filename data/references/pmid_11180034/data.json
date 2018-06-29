@@ -1,0 +1,49 @@
+{
+  "publication": {
+    "pmid": 11180034,
+    "doi": "10.1067/mcp.2001.113185",
+    "citation": "Malhotra, S. (2001). Seville orange juice-felodipine interaction: Comparison with dilute grapefruit juice and involvement of furocoumarins. Clinical Pharmacology & Therapeutics, 69(1), 14–23."
+  },
+  "remedies": [
+    {
+      "id": 0,
+      "name": "Seville orange juice",
+      "xrefs": [
+        "ITIS:825215"
+      ]
+    }
+  ],
+  "drugs": [
+    {
+      "id": 0,
+      "name": "Felodipine",
+      "xrefs": [
+        "DRUGBANK:DB01023",
+        "DRUGCENTRAL:1142"
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "id": 0,
+      "name": "Felodipine",
+      "xrefs": [
+        "HMDB:HMDB0015158",
+        "PUBCHEM:CID3333",
+        "UNII:OL961R6O2C",
+        "CAS:72509-76-3"
+      ]
+    }
+  ],
+  "enzymes": [],
+  "transporter": [],
+  "remedy-compounds": [],
+  "drug-compounds": [
+    {
+      "drug-id": 0,
+      "compound-id": 0
+    }
+  ],
+  "processes": [],
+  "studies": []
+}

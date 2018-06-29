@@ -1,0 +1,193 @@
+{
+  "publication": {
+    "pmid": 12095536,
+    "doi": "10.1016/S0024-3205(02)01799-X",
+    "citation": "Di Marco MP, et al. The effect of grapefruit juice and seville orange juice on the pharmacokinetics of dextromethorphan: the role of gut CYP3A and P-glycoprotein. Life Sci. 2002;71(10):1149-60."
+  },
+  "remedies": [
+    {
+      "id": 0,
+      "name": "Grapefruit juice",
+      "xrefs": [
+        "ITIS:28887"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Seville orange juice",
+      "xrefs": [
+        "ITIS:825215"
+      ]
+    }
+  ],
+  "drugs": [
+    {
+      "id": 0,
+      "name": "Dextromethorphan",
+      "xrefs": [
+        "DRUGBANK:DB00514",
+        "DRUGCENTRAL:842"
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "id": 0,
+      "name": "Dextromethorphan",
+      "xrefs": [
+        "HMDB:HMDB0001920",
+        "PUBCHEM:CID5362449",
+        "PUBCHEM:CID5360696",
+        "UNII:7355X3ROTS",
+        "CAS:125-71-3"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "3-methoxymorphinan",
+      "xrefs": [
+        "HMDB:HMDB0014045",
+        "PUBCHEM:CID6603912",
+        "DRUGBANK:DBMET00225"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "dextrorphan",
+      "xrefs": [
+        "HMDB:HMDB0060552",
+        "PUBCHEM:CID5360697",
+        "DRUGBANK:DBMET00224"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "3-hydroxymorphinan",
+      "xrefs": [
+        "PUBCHEM:CID11791385",
+        "UNII:AG3VB17119",
+        "DRUGBANK:DBMET01318"
+      ]
+    }
+  ],
+  "enzymes": [
+    {
+      "id": 0,
+      "name": "CYP3A",
+      "xrefs": []
+    },
+    {
+      "id": 1,
+      "name": "CYP2D6",
+      "xrefs": [
+        "UNIPROT:P10635"
+      ]
+    }
+  ],
+  "transporter": [
+    {
+      "id": 0,
+      "name": "P-glycoprotein",
+      "xrefs": [
+        "UNIPROT:P08183"
+      ]
+    }
+  ],
+  "remedy-compounds": [],
+  "drug-compounds": [
+    {
+      "drug-id": 0,
+      "compound-id": 0
+    }
+  ],
+  "processes": [
+    {
+      "id": 0,
+      "type": "reaction",
+      "substrates": [
+        {
+          "compound-id": 0
+        }
+      ],
+      "enzyme-id": 0,
+      "products": [
+        {
+          "compound-id": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": "reaction",
+      "substrates": [
+        {
+          "compound-id": 0
+        }
+      ],
+      "enzyme-id": 1,
+      "products": [
+        {
+          "compound-id": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "reaction",
+      "substrates": [
+        {
+          "compound-id": 1
+        }
+      ],
+      "enzyme-id": 1,
+      "products": [
+        {
+          "compound-id": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "reaction",
+      "substrates": [
+        {
+          "compound-id": 2
+        }
+      ],
+      "enzyme-id": 0,
+      "products": [
+        {
+          "compound-id": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "transport",
+      "substrates": [
+        {
+          "compound-id": 0
+        }
+      ],
+      "transporter-id": 0,
+      "products": [
+        {
+          "compound-id": 0
+        }
+      ]
+    }
+  ],
+  "studies": [
+    {
+      "type": "clinical study",
+      "subject-group": {
+        "total": 11,
+        "male": 6,
+        "female": 5,
+        "age-min": 14,
+        "age-max": 43,
+        "age-median": 32
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "publication": {
+    "pmid": 17215845,
+    "doi": "10.1038/sj.clpt.6100056",
+    "citation": "Glaeser, H., Bailey, D. G., Dresser, G. K., Gregor, J. C., Schwarz, U. I., McGrath, J. S., … Kim, R. B. (2007). Intestinal Drug Transporter Expression and the Impact of Grapefruit Juice in Humans. Clinical Pharmacology & Therapeutics, 81(3), 362–370."
+  },
+  "remedies": [
+    {
+      "id": 0,
+      "name": "Grapefruit juice",
+      "xrefs": [
+        "ITIS:28887"
+      ]
+    }
+  ],
+  "drugs": [],
+  "compounds": [],
+  "enzymes": [],
+  "transporter": [],
+  "remedy-compounds": [],
+  "drug-compounds": [],
+  "processes": [],
+  "studies": []
+}
