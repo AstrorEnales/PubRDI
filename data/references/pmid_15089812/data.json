@@ -1,0 +1,48 @@
+{
+  "publication": {
+    "pmid": 15089812,
+    "doi": "10.1111/j.1365-2125.2003.02051.x",
+    "citation": "Jiang, X., Williams, K. M., Liauw, W. S., Ammit, A. J., Roufogalis, B. D., Duke, C. C., … McLachlan, A. J. (2004). Effect of St John’s wort and ginseng on the pharmacokinetics and pharmacodynamics of warfarin in healthy subjects. British Journal of Clinical Pharmacology, 57(5), 592–599."
+  },
+  "remedies": [
+    {
+      "id": 0,
+      "name": "St John's wort",
+      "xrefs": [
+        "ITIS:21454"
+      ]
+    }
+  ],
+  "drugs": [
+    {
+      "id": 0,
+      "name": "S-Warfarin",
+      "xrefs": [
+        "DRUGBANK:DB14055"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "R-Warfarin",
+      "xrefs": [
+        "DRUGBANK:DB08496"
+      ]
+    }
+  ],
+  "compounds": [],
+  "enzymes": [],
+  "transporter": [],
+  "remedy-compounds": [],
+  "drug-compounds": [],
+  "processes": [],
+  "studies": [
+    {
+      "type": "clinical study",
+      "subject-group": {
+        "total": 12,
+        "male": 12,
+        "female": 0
+      }
+    }
+  ]
+}

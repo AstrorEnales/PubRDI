@@ -18,5 +18,6 @@ class PublicationDataFile:
         self.enzymes = [Enzyme(x['name'], x['xrefs']) for x in self.raw['enzymes']]
         self.transporter = [Transporter(x['name'], x['xrefs']) for x in self.raw['transporter']]
         self.drugs = [Drug(x['name'], x['xrefs']) for x in self.raw['drugs']]
-        self.publication = Reference(self.raw['publication']['pmid'], self.raw['publication']['doi'],
-                                     self.raw['publication']['citation'])
+        publication = self.raw['publication']
+        doi = publication['doi'] if 'doi' in publication else None
+        self.publication = Reference(publication['pmid'], doi, publication['citation'])

@@ -7,7 +7,7 @@ all_compounds = []
 all_enzymes = []
 all_transporter = []
 
-for pmid in [12095536, 11180034, 17215845]:
+for pmid in [12095536, 11180034, 17215845, 10871299, 15089812]:
     data_file = PublicationDataFile('../data/references/pmid_%s/data.json' % pmid)
     all_references.append(data_file.publication)
     for x in data_file.remedies:
