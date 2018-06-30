@@ -1,0 +1,96 @@
+{
+  "publication": {
+    "pmid": 25640094,
+    "doi": "10.11622/smedj.2015004",
+    "citation": "Chua, Y., Ang, X., Zhong, X., & Khoo, K. (2015). Interaction between warfarin and Chinese herbal medicines. Singapore Medical Journal, 56(1), 11–18."
+  },
+  "remedies": [
+    {
+      "id": 0,
+      "name": "Danshen",
+      "xrefs": []
+    },
+    {
+      "id": 1,
+      "name": "Ginkgo",
+      "xrefs": [
+        "ITIS:183269"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dong quai",
+      "xrefs": []
+    },
+    {
+      "id": 3,
+      "name": "American ginseng",
+      "xrefs": [
+        "ITIS:29399"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Safflower",
+      "xrefs": [
+        "ITIS:501305"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Peach kernel",
+      "xrefs": [
+        "ITIS:24765"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Licorice",
+      "xrefs": [
+        "ITIS:26718"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Asian ginseng",
+      "xrefs": [
+        "ITIS:505938"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Lycium",
+      "xrefs": [
+        "ITIS:503599"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ginger",
+      "xrefs": [
+        "ITIS:42402"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Notoginseng",
+      "xrefs": []
+    }
+  ],
+  "drugs": [
+    {
+      "id": 0,
+      "name": "Warfarin",
+      "xrefs": [
+        "DRUGBANK:DB00682"
+      ]
+    }
+  ],
+  "compounds": [],
+  "enzymes": [],
+  "transporter": [],
+  "remedy-compounds": [],
+  "drug-compounds": [],
+  "processes": [],
+  "studies": []
+}
