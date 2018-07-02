@@ -179,6 +179,7 @@
   ],
   "studies": [
     {
+      "id": 0,
       "type": "clinical study",
       "subject-group": {
         "total": 11,

@@ -11,6 +11,13 @@
       "xrefs": [
         "ITIS:21454"
       ]
+    },
+    {
+      "id": 1,
+      "name": "Korean ginseng",
+      "xrefs": [
+        "ITIS:505938"
+      ]
     }
   ],
   "drugs": [
@@ -29,19 +36,160 @@
       ]
     }
   ],
-  "compounds": [],
-  "enzymes": [],
+  "compounds": [
+    {
+      "id": 0,
+      "name": "Hypericin",
+      "xrefs": [
+        "PUBCHEM:CID5281051",
+        "UNII:7V2F1075HD",
+        "CAS:548-04-9",
+        "ATC:N06AX99"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Hyperforin",
+      "xrefs": [
+        "DRUGBANK:DB01892",
+        "UNII:RM741E34FP",
+        "CAS:11079-53-1",
+        "PUBCHEM:CID441298"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ginsenoside Rg1",
+      "xrefs": [
+        "DRUGBANK:DB06750",
+        "PUBCHEM:CID441923",
+        "UNII:PJ788634QY",
+        "CAS:22427-39-0"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "S-Warfarin",
+      "xrefs": [
+        "PUBCHEM:CID54688261",
+        "UNII:HP31W7FNP4",
+        "CAS:5543-57-7"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "R-Warfarin",
+      "xrefs": [
+        "PUBCHEM:CID54684598",
+        "UNII:09CC5J5C8A",
+        "CAS:5543-58-8"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "S-7-hydroxywarfarin",
+      "xrefs": [
+        "PUBCHEM:CID54692246"
+      ]
+    }
+  ],
+  "enzymes": [
+    {
+      "id": 0,
+      "name": "CYP2C9",
+      "xrefs": [
+        "UNIPROT:P11712"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "CYP1A2",
+      "xrefs": [
+        "UNIPROT:P05177"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "CYP3A4",
+      "xrefs": [
+        "UNIPROT:P08684"
+      ]
+    }
+  ],
   "transporter": [],
-  "remedy-compounds": [],
-  "drug-compounds": [],
-  "processes": [],
+  "remedy-compounds": [
+    {
+      "remedy-id": 0,
+      "compound-id": 0
+    },
+    {
+      "remedy-id": 0,
+      "compound-id": 1
+    },
+    {
+      "remedy-id": 1,
+      "compound-id": 2
+    }
+  ],
+  "drug-compounds": [
+    {
+      "drug-id": 0,
+      "compound-id": 3
+    },
+    {
+      "drug-id": 1,
+      "compound-id": 4
+    }
+  ],
+  "processes": [
+    {
+      "id": 0,
+      "type": "reaction",
+      "substrates": [
+        {
+          "compound-id": 3
+        }
+      ],
+      "enzyme-id": 0,
+      "products": [
+        {
+          "compound-id": 5
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": "reaction",
+      "substrates": [
+        {
+          "compound-id": 4
+        }
+      ],
+      "enzyme-id": 1,
+      "products": []
+    },
+    {
+      "id": 2,
+      "type": "reaction",
+      "substrates": [
+        {
+          "compound-id": 4
+        }
+      ],
+      "enzyme-id": 2,
+      "products": []
+    }
+  ],
   "studies": [
     {
+      "id": 0,
       "type": "clinical study",
       "subject-group": {
         "total": 12,
         "male": 12,
-        "female": 0
+        "female": 0,
+        "age-min": 20,
+        "age-max": 40
       }
     }
   ]

@@ -1,0 +1,326 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/AstrorEnales/PubRDI/tree/master/data/references/schema.json",
+  "title": "Publication",
+  "description": "Information from a publication relevant to drug-remedy interactions",
+  "type": "object",
+  "properties": {
+    "publication": {
+      "type": "object",
+      "description": "Reference of the publication",
+      "properties": {
+        "pmid": {
+          "type": "integer",
+          "description": "The PubMed ID of the publication"
+        },
+        "doi": {
+          "type": "string",
+          "description": "The DOI of the publication"
+        },
+        "citation": {
+          "type": "string",
+          "description": "The citation of the publication"
+        }
+      },
+      "required": [
+        "pmid",
+        "citation"
+      ]
+    },
+    "remedies": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/remedy"
+      }
+    },
+    "drugs": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/drug"
+      }
+    },
+    "compounds": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/compound"
+      }
+    },
+    "enzymes": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/enzyme"
+      }
+    },
+    "transporter": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/transporter"
+      }
+    },
+    "remedy-compounds": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/remedy-compound-link"
+      }
+    },
+    "drug-compounds": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/drug-compound-link"
+      }
+    },
+    "processes": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/process"
+      }
+    },
+    "studies": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/study"
+      }
+    }
+  },
+  "definitions": {
+    "remedy": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "name": {
+          "type": "string",
+          "description": "TODO"
+        },
+        "xrefs": {
+          "type": "array",
+          "description": "TODO",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "drug": {
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "name": {
+          "type": "string",
+          "description": "TODO"
+        },
+        "xrefs": {
+          "type": "array",
+          "description": "TODO",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "compound": {
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "name": {
+          "type": "string",
+          "description": "TODO"
+        },
+        "xrefs": {
+          "type": "array",
+          "description": "TODO",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "enzyme": {
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "name": {
+          "type": "string",
+          "description": "TODO"
+        },
+        "xrefs": {
+          "type": "array",
+          "description": "TODO",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "transporter": {
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "name": {
+          "type": "string",
+          "description": "TODO"
+        },
+        "xrefs": {
+          "type": "array",
+          "description": "TODO",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "remedy-compound-link": {
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "remedy-id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "compound-id": {
+          "type": "integer",
+          "description": "TODO"
+        }
+      }
+    },
+    "drug-compound-link": {
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "drug-id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "compound-id": {
+          "type": "integer",
+          "description": "TODO"
+        }
+      }
+    },
+    "process": {
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "type": {
+          "type": "string",
+          "description": "TODO"
+        },
+        "enzyme-id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "transporter-id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "substrates": {
+          "type": "array",
+          "description": "TODO",
+          "items": {
+            "type": "object",
+            "properties": {
+              "compound-id": {
+                "type": "integer",
+                "description": "TODO"
+              }
+            }
+          }
+        },
+        "products": {
+          "type": "array",
+          "description": "TODO",
+          "items": {
+            "type": "object",
+            "properties": {
+              "compound-id": {
+                "type": "integer",
+                "description": "TODO"
+              }
+            }
+          }
+        }
+      }
+    },
+    "study": {
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "TODO"
+        },
+        "type": {
+          "type": "string",
+          "description": "TODO"
+        },
+        "subject-group": {
+          "type": "object",
+          "description": "TODO",
+          "properties": {
+            "total": {
+              "type": "integer",
+              "description": "TODO",
+              "minimum": 0
+            },
+            "male": {
+              "type": "integer",
+              "description": "TODO",
+              "minimum": 0
+            },
+            "female": {
+              "type": "integer",
+              "description": "TODO",
+              "minimum": 0
+            },
+            "age-min": {
+              "type": "integer",
+              "description": "TODO",
+              "minimum": 0
+            },
+            "age-max": {
+              "type": "integer",
+              "description": "TODO",
+              "minimum": 0
+            },
+            "age-median": {
+              "type": "number",
+              "description": "TODO",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
